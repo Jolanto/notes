@@ -5,6 +5,15 @@ public class Note {
     private long id;
     private String heading;
     private String details;
+    private long userId;
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
 
     public long getId() {
         return id;
