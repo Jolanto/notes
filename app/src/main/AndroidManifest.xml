@@ -13,17 +13,23 @@
         android:theme="@style/Theme.Notes"
         tools:targetApi="31">
         
-        <!-- Login Activity (Launcher) -->
+        <!-- Splash Screen Activity (Launcher) -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.Notes"
-            android:windowSoftInputMode="adjustResize">
+            android:theme="@style/Theme.Notes.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Notes"
+            android:windowSoftInputMode="adjustResize" />
         
         <!-- Register Activity -->
         <activity
